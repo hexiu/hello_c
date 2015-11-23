@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef int datatype;
+typedef char datatype;
 
 typedef struct node
 {
@@ -69,14 +69,16 @@ int main()
     while(1)
     {
         printf("Enter data:");
-        scanf("%d",&x);
-        if(x==0) break;
+        scanf("%c",&x);
+        if(x=='0') break;
         getchar();
         pushstack(x);
 
     }
     printf("%d \n",s->top->data);
-    popstack();
-    for(n=s->top;n!=s->buttom;n=n->next)
-        printf("%d ",n->data);
+    while(s->top!=s->buttom)
+    {
+        x=popstack();
+         printf("%c ",x);
+    }
 }

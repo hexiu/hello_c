@@ -194,6 +194,36 @@ void InFOrder(BiTree T)
 }
 
 
+/*&
+//后续非递归遍历(Have Problem)
+PostFOrder(BiTree T)
+{
+
+}
+
+
+*/
+/*
+{
+    BiTree q=T;
+    while(p!=NULL||s->top!=s->buttom)
+    {
+         if(p!=NULL)
+         {
+             pushstack(p->lchild);
+             p=p->lchild;
+         }
+         else
+         {
+             p=topstack();
+
+             p=p->rchild;
+             printf("");
+         }
+    }
+}
+*/
+
 
 int main()
 {
@@ -210,6 +240,4 @@ int main()
     PreFOrder(T);
     printf("\n");
     InFOrder(T);
-
 }
-

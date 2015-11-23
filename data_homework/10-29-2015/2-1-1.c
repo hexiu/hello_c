@@ -55,12 +55,13 @@ char * gets1(char * x)
     char *q=x;
     int i=0;
     ch=getchar();
+    getchar();
     printf("*****\n");
     while(ch!='\n')
     {
-        printf("%c",ch);
+        printf("%c  ",ch);
          *x=ch;
-         printf("%c",*x);
+         printf("%c   ",*x);
          *x++;
          i++;
          ch=getchar();

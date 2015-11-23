@@ -49,5 +49,10 @@ int main()
         else
             pushLstack(top,ch);
     }
+    while(s->top!=s->buttom)
+    {
+        ch=popstack(slStacktype *top);
+
+    }
 
 }
